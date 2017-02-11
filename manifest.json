@@ -1,0 +1,48 @@
+{
+  "manifest_version": 2,
+
+  "name": "Find on Boardgamegeek",
+  "description": "Find a game on Boardgamegeek",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "js": [
+        "scripts/content_scripts/content_script.js",
+        "scripts/content_scripts/amazon.js"
+      ]
+    },
+    {
+      "matches": ["http://www.coolstuffinc.com/*"],
+      "js": [
+        "scripts/content_scripts/content_script.js",
+        "scripts/content_scripts/coolstuffinc.js"
+      ]
+    },
+    {
+      "matches": ["http://www.miniaturemarket.com/*"],
+      "js": [
+        "scripts/content_scripts/content_script.js",
+        "scripts/content_scripts/miniature_market.js"
+      ]
+    },
+    {
+      "matches": ["http://www.gamesurplus.com/*"],
+      "js": [
+        "scripts/content_scripts/content_script.js",
+        "scripts/content_scripts/game_surplus.js"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "https://www.boardgamegeek.com/"
+  ]
+}
