@@ -3,7 +3,7 @@
 
   "name": "Find on Boardgamegeek",
   "description": "Find a game on Boardgamegeek",
-  "version": "1.0",
+  "version": "1.1",
 
   "browser_action": {
     "default_icon": "icon.png",
@@ -26,14 +26,14 @@
       ]
     },
     {
-      "matches": ["http://www.miniaturemarket.com/*"],
+      "matches": ["https://www.miniaturemarket.com/*"],
       "js": [
         "scripts/content_scripts/content_script.js",
         "scripts/content_scripts/miniature_market.js"
       ]
     },
     {
-      "matches": ["http://www.gamesurplus.com/*"],
+      "matches": ["https://www.gamesurplus.com/*"],
       "js": [
         "scripts/content_scripts/content_script.js",
         "scripts/content_scripts/game_surplus.js"

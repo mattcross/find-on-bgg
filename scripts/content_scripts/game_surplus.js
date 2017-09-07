@@ -1,3 +1,3 @@
 function locateGameNameElement() {
-  return extractFirstMatchingElement(document.querySelectorAll('#prod_info_head'));
+  return extractFirstMatchingElement(document.querySelectorAll('h3.product_title'));
 }
