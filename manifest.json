@@ -19,7 +19,7 @@
       ]
     },
     {
-      "matches": ["http://www.coolstuffinc.com/*"],
+      "matches": ["https://www.coolstuffinc.com/*"],
       "js": [
         "scripts/content_scripts/content_script.js",
         "scripts/content_scripts/coolstuffinc.js"
